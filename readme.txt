@@ -1,3 +1,8 @@
+参考文章：
+git学习 | Gitxie的博客：
+https://gitxieada.github.io/2017/10/27/git%E5%AD%A6%E4%B9%A0/
+Git远程操作详解 - 阮一峰的网络日志：http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+
 1.命令 :git init 
 新建一个testgit版本库。
 当前testgit目录下会多了一个.git的目录，这个目录是Git来跟踪管理版本的。
@@ -21,6 +26,19 @@ git status来查看是否还有文件未提交
 由此可知，增加内容3333的版本号是 b597e3b.我们现在可以命令
 
 git reset  -–hard  b597e3b来恢复了
+
+
+6. 创建与合并分支
+创建dev分支，然后切换到dev分支上：
+git checkout -b dev。
+git checkout 命令加上 –b参数表示创建并切换，相当于如下2条命令
+
+git branch dev
+
+git checkout dev
+
+git branch查看分支，会列出所有的分支，当前分支前面会添加一个星号。
+
 
 6. 添加远程库 
 把一个已有的本地仓库与gittest关联，然后，把本地仓库的内容推送到GitHub仓库。
