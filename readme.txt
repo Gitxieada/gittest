@@ -25,7 +25,14 @@ git reset  -–hard  b597e3b来恢复了
 6. 添加远程库 
 把一个已有的本地仓库与gittest关联，然后，把本地仓库的内容推送到GitHub仓库。
 (1)git remote add origin https://github.com/Gitxieada/gittest.git
+   或git remote add origin git@github.com:Gitxieada/gittest.git
 
 (2)git push -u origin master
 把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。
+由于远程库是空的，我们第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+从现在起，只要本地作了提交，就可以通过如下命令：
+
+git push origin master
+
+把本地master分支的最新修改推送到github上了。
 
