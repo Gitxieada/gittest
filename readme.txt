@@ -21,3 +21,11 @@ git status来查看是否还有文件未提交
 由此可知，增加内容3333的版本号是 b597e3b.我们现在可以命令
 
 git reset  -–hard  b597e3b来恢复了
+
+6. 添加远程库 
+把一个已有的本地仓库与gittest关联，然后，把本地仓库的内容推送到GitHub仓库。
+(1)git remote add origin https://github.com/Gitxieada/gittest.git
+
+(2)git push -u origin master
+把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。
+
