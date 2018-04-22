@@ -9,3 +9,6 @@ git status来查看是否还有文件未提交
 
 4. 改下readme.txt内容，使用git status来查看下结果，会显示readme.txt文件已被修改，但是未被提交的修改；
 使用git diff readme.txt，查看readme.txt文件到底改了什么内容
+
+
+33333333333333
